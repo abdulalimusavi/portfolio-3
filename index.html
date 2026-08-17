@@ -1,323 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdul Ali — Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdul Ali — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ANIMATED BACKGROUND CANVAS -->
-  <canvas id="bg-canvas"></canvas>
+    <!-- ====== HACKER RAIN BACKGROUND ====== -->
+    <canvas id="bg-canvas"></canvas>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <h2 class="logo">Ali<span>.</span></h2>
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar" id="navbar">
+        <h2 class="logo">Ali<span>.</span></h2>
+        <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <!-- ====== HOME ====== -->
+    <section class="home" id="home">
+        <div class="home-badge">
+            <span class="badge-dot"></span>
+            Open to opportunities
+        </div>
 
-    <ul class="menu" id="menu">
-      <li><a href="#home"    onclick="closeMenu()">Home</a></li>
-      <li><a href="#skills"  onclick="closeMenu()">Skills</a></li>
-      <li><a href="#about"   onclick="closeMenu()">About</a></li>
-      <li><a href="#notes"   onclick="closeMenu()">Notes</a></li>
-      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-    </ul>
-  </nav>
+        <div class="home-img-wrap">
+            <img src="Gemini_Generated_Image_phi1c4phi1c4phi1.png" alt="Abdul Ali" />
+            <div class="ring-glow"></div>
+        </div>
 
-  <!-- HOME -->
-  <section class="home" id="home">
-    <div class="home-badge">Software Engineer</div>
+        <h2>Abdul <span>Ali</span></h2>
+        <h3 class="typing-container">
+            <span id="typed-text"></span><span class="cursor-blink">|</span>
+        </h3>
 
-    <div class="home-img-wrap">
-      <img src="Gemini_Generated_Image_phi1c4phi1c4phi1.png" alt="Abdul Ali" />
-    </div>
+        <p>
+            Full Stack Developer &amp; AI Expert — building scalable web applications,
+            intelligent systems, and digital experiences that drive impact.
+        </p>
 
-    <h2>Abdul <span>Ali</span></h2>
-    <h3>Karachi Based Software Engineer</h3>
+        <div class="home-buttons">
+            <a href="Abdul ali al Moosvi.pdf" download class="btn-primary">Download CV</a>
+            <a href="tools.pdf" download class="btn-outline">Download Tools</a>
+        </div>
+    </section>
 
-    <p>Passionate Web Developer and AI Expert with diverse expertise across multiple fields — creating innovative digital solutions, intelligent systems, and impactful experiences through technology, creativity, and problem-solving.</p>
+    <div class="section-divider"></div>
 
-    <div class="home-buttons">
-      <button class="btn-primary"><a href="Abdul ali al Moosvi.pdf" download>Download CV</a></button>
-      <button class="btn-outline"><a href="tools.pdf" download>Download Tools</a></button>
-    </div>
-  </section>
+    <!-- ====== SKILLS ====== -->
+    <section class="skills" id="skills">
+        <div class="section-label">Expertise</div>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+        <p class="skills-subtitle">Full-stack technologies, AI/ML, design, and development tools I work with daily.</p>
 
-  <div class="section-divider"></div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3 class="cat-title"><i class="fas fa-code cat-icon"></i> Languages</h3>
+                <div class="skill-chips">
+                    <span class="chip"><i class="fab fa-js-square"></i> JavaScript</span>
+                    <span class="chip"><i class="fab fa-python"></i> Python</span>
+                    <span class="chip"><i class="fab fa-java"></i> Java</span>
+                    <span class="chip"><i class="fas fa-cog"></i> C++</span>
+                    <span class="chip"><i class="fab fa-js"></i> TypeScript</span>
+                    <span class="chip"><i class="fas fa-hashtag"></i> C#</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="cat-title"><i class="fas fa-layer-group cat-icon"></i> Frameworks &amp; Libraries</h3>
+                <div class="skill-chips">
+                    <span class="chip"><i class="fab fa-react"></i> React</span>
+                    <span class="chip"><i class="fas fa-arrow-right"></i> Next.js</span>
+                    <span class="chip"><i class="fab fa-node-js"></i> Node.js</span>
+                    <span class="chip"><i class="fas fa-server"></i> Express</span>
+                    <span class="chip"><i class="fab fa-python"></i> Django</span>
+                    <span class="chip"><i class="fas fa-coffee"></i> Spring Boot</span>
+                    <span class="chip"><i class="fab fa-css3-alt"></i> Tailwind CSS</span>
+                    <span class="chip"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="cat-title"><i class="fas fa-database cat-icon"></i> Databases</h3>
+                <div class="skill-chips">
+                    <span class="chip"><i class="fas fa-leaf"></i> MongoDB</span>
+                    <span class="chip"><i class="fas fa-database"></i> PostgreSQL</span>
+                    <span class="chip"><i class="fas fa-database"></i> MySQL</span>
+                    <span class="chip"><i class="fas fa-fire"></i> Firebase</span>
+                    <span class="chip"><i class="fas fa-bolt"></i> Redis</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="cat-title"><i class="fas fa-brain cat-icon"></i> AI &amp; Machine Learning</h3>
+                <div class="skill-chips">
+                    <span class="chip"><i class="fas fa-robot"></i> TensorFlow</span>
+                    <span class="chip"><i class="fas fa-fire"></i> PyTorch</span>
+                    <span class="chip"><i class="fas fa-chart-line"></i> scikit-learn</span>
+                    <span class="chip"><i class="fas fa-robot"></i> OpenAI API</span>
+                    <span class="chip"><i class="fas fa-link"></i> LangChain</span>
+                    <span class="chip"><i class="fas fa-hug"></i> Hugging Face</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="cat-title"><i class="fas fa-palette cat-icon"></i> Design &amp; Creative</h3>
+                <div class="skill-chips">
+                    <span class="chip"><i class="fas fa-pen-fancy"></i> Graphic Design</span>
+                    <span class="chip"><i class="fas fa-video"></i> Video Editing</span>
+                    <span class="chip"><i class="fas fa-bullhorn"></i> Content Creation</span>
+                    <span class="chip"><i class="fas fa-chalkboard-teacher"></i> Whiteboard Animation</span>
+                    <span class="chip"><i class="fab fa-figma"></i> Figma</span>
+                    <span class="chip"><i class="fab fa-adobe"></i> Adobe Suite</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="cat-title"><i class="fas fa-tools cat-icon"></i> Developer Tools</h3>
+                <div class="skill-chips">
+                    <span class="chip"><i class="fab fa-git-alt"></i> Git</span>
+                    <span class="chip"><i class="fab fa-docker"></i> Docker</span>
+                    <span class="chip"><i class="fab fa-aws"></i> AWS</span>
+                    <span class="chip"><i class="fab fa-microsoft"></i> Azure</span>
+                    <span class="chip"><i class="fas fa-code"></i> VS Code</span>
+                    <span class="chip"><i class="fas fa-bolt"></i> Postman</span>
+                    <span class="chip"><i class="fab fa-linux"></i> Linux</span>
+                    <span class="chip"><i class="fas fa-sync-alt"></i> CI/CD</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 class="cat-title"><i class="fas fa-rocket cat-icon"></i> Other Expertise</h3>
+                <div class="skill-chips">
+                    <span class="chip"><i class="fas fa-tasks"></i> Product Management</span>
+                    <span class="chip"><i class="fas fa-coins"></i> Crypto Currency</span>
+                    <span class="chip"><i class="fas fa-cube"></i> Web3</span>
+                    <span class="chip"><i class="fas fa-cloud"></i> Cloud Architecture</span>
+                    <span class="chip"><i class="fas fa-cogs"></i> DevOps</span>
+                    <span class="chip"><i class="fas fa-sitemap"></i> System Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- SKILLS -->
-  <section class="services" id="skills">
-    <div class="section-label">What I Do</div>
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-pill">Graphic Designing</div>
-      <div class="skill-pill">Video Editing</div>
-      <div class="skill-pill">Web Development</div>
-      <div class="skill-pill">Content Creation</div>
-      <div class="skill-pill">Crypto Currency</div>
-      <div class="skill-pill">Product Management</div>
-      <div class="skill-pill">AI Expert</div>
-      <div class="skill-pill">Whiteboard Animation</div>
-    </div>
-  </section>
+    <div class="section-divider"></div>
 
-  <div class="section-divider"></div>
+    <!-- ====== ABOUT ====== -->
+    <section class="about" id="about">
+        <div class="section-label">My Story</div>
+        <h2 class="section-title">About Me</h2>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="section-label">My Story</div>
-    <h2 class="section-title">About</h2>
-    <div class="about-grid">
-      <div class="about-card">
-        <div class="about-card-icon">📺</div>
-        <h3>Youtube Management</h3>
-        <p>Dedicated manager of a UK-based Islamic YouTube channel, successfully running it for four years. Creating inspiring content to educate, uplift, and strengthen the faith of Muslims across the UK and beyond.</p>
-      </div>
-      <div class="about-card">
-        <div class="about-card-icon">🛒</div>
-        <h3>eCommerce Store</h3>
-        <p>Owner and manager of an eCommerce store operating for five years. Specialising in high-quality Islamic products and ethical goods to serve the Muslim community with trust and excellence.</p>
-      </div>
-      <div class="about-card">
-        <div class="about-card-icon">⚙️</div>
-        <h3>Management</h3>
-        <p>Professionally manage Software and AI-based projects and operations from all over the world. Delivering cutting-edge solutions to clients globally, driving efficiency and digital transformation.</p>
-      </div>
-    </div>
-  </section>
+        <div class="story-container">
+            <div class="story-quote-mark">
+                <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="story-content" id="storyContent">
+                <p class="story-text">
+                    From the bustling streets of Karachi to the global digital stage, 
+                    my journey has been one of relentless curiosity. At 16, I built my 
+                    first website — a clunky, beautiful mess. That spark ignited a fire. 
+                    Today, I architect solutions that bridge cultures: managing a UK 
+                    Islamic YouTube channel, running an ethical eCommerce store, and 
+                    deploying AI systems across continents. I don't just write code; 
+                    I craft experiences that empower communities. Every line of code, 
+                    every pixel, every algorithm serves a purpose — to connect, to 
+                    educate, to elevate. This isn't just my story. It's an invitation 
+                    to build something meaningful together.
+                </p>
+                <div class="story-author">
+                    <span class="story-author-name">— Abdul Ali Al Moosvi</span>
+                    <span class="story-author-title">Full Stack Developer &amp; AI Expert</span>
+                </div>
+            </div>
+            <div class="story-decoration">
+                <div class="story-circle story-circle-1"></div>
+                <div class="story-circle story-circle-2"></div>
+                <div class="story-circle story-circle-3"></div>
+            </div>
+        </div>
+    </section>
 
-  <div class="section-divider"></div>
-  
+    <div class="section-divider"></div>
 
-  <!-- NOTES -->
-  <section class="notes" id="notes">
-    <div class="section-label">Free Resources</div>
-    <h2 class="section-title">Notes</h2>
-    <p class="notes-subtitle">Free useful notes to help you on your Web Development journey.</p>
+    <!-- ====== PROJECTS ====== -->
+    <section class="projects" id="projects">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Projects</h2>
+        <p class="projects-subtitle">Live previews of my recent work — click to visit the live sites.</p>
 
-    <div class="notes-grid">
-      <div class="note-card">
-        <img src="html.webp" alt="HTML" />
-        <h4>HTML</h4>
-        <a href="HTML_Complete_Notes.pdf" class="btn-glow" onclick="dlNote(event,'HTML_Complete_Notes.pdf')"><span>Download</span></a>
-      </div>
-      <div class="note-card">
-        <img src="css.webp" alt="CSS" />
-        <h4>CSS</h4>
-        <a href="CSS_Complete_Notes.pdf" class="btn-glow" onclick="dlNote(event,'CSS_Complete_Notes.pdf')"><span>Download</span></a>
-      </div>
-      <div class="note-card">
-        <img src="dsa.webp" alt="DSA" />
-        <h4>DSA</h4>
-        <a href="DSA_CompleteNotes.pdf" class="btn-glow" onclick="dlNote(event,'DSA_CompleteNotes.pdf')"><span>Download</span></a>
-      </div>
-      <div class="note-card">
-        <img src="js.webp" alt="JavaScript" />
-        <h4>JavaScript</h4>
-        <a href="JS_Chapterwise_Notes.pdf" class="btn-glow" onclick="dlNote(event,'JS_Chapterwise_Notes.pdf')"><span>Download</span></a>
-      </div>
-      <div class="note-card">
-        <img src="python.webp" alt="Python" />
-        <h4>Python</h4>
-        <a href="Python_Complete_Notes.pdf" class="btn-glow" onclick="dlNote(event,'Python_Complete_Notes.pdf')"><span>Download</span></a>
-      </div>
-      <div class="note-card">
-        <img src="c.webp" alt="C" />
-        <h4>C Language</h4>
-        <a href="C_Complete_Notes.pdf" class="btn-glow" onclick="dlNote(event,'C_Complete_Notes.pdf')"><span>Download</span></a>
-      </div>
-      <div class="note-card">
-        <img src="android.webp" alt="Android" />
-        <h4>Android</h4>
-        <a href="Android_CompleteNotes.pdf" class="btn-glow" onclick="dlNote(event,'Android_CompleteNotes.pdf')"><span>Download</span></a>
-      </div>
-      <div class="note-card">
-        <img src="java.webp" alt="Java" />
-        <h4>Java</h4>
-        <a href="Java_Complete_Notes.pdf" class="btn-glow" onclick="dlNote(event,'Java_Complete_Notes.pdf')"><span>Download</span></a>
-      </div>
-    </div>
-  </section>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon-wrapper">
+                    <div class="project-icon-circle">
+                        <i class="fas fa-tools project-icon"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                </div>
+                <h4>Alixtools.site</h4>
+                <p>An all-in-one online toolset for developers, designers, and creators — offering utilities like code formatters, converters, and generators.</p>
+                <div class="project-tags">
+                    <span>React</span>
+                    <span>Node</span>
+                    <span>MongoDB</span>
+                </div>
+                <a href="https://alixtools.site" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
 
-  <div class="section-divider"></div>
+            <div class="project-card">
+                <div class="project-icon-wrapper">
+                    <div class="project-icon-circle">
+                        <i class="fas fa-bug project-icon"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                </div>
+                <h4>Debugcafe.site</h4>
+                <p>A collaborative debugging and code review platform where developers share solutions, get feedback, and improve their coding skills.</p>
+                <div class="project-tags">
+                    <span>Next.js</span>
+                    <span>Firebase</span>
+                    <span>Tailwind</span>
+                </div>
+                <a href="https://debugcafe.site" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="section-label">Get In Touch</div>
-    <h2 class="section-title">Contact Me</h2>
-    <p class="contact-desc">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScqG0ynzJT63DCbv6P83JvYOJo7aG3A_VKn-Q4gmQ4vWInaTw/viewform"
-       target="_blank"
-       class="btn-contact">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-        <path d="M22 16.92V19.92C22 20.48 21.55 20.94 20.99 20.99C19.45 21.08 17.96 20.81 16.56 20.2C15.26 19.64 14.12 18.84 13.17 17.83L7.05 11.71C6.04 10.76 5.24 9.62 4.68 8.32C4.07 6.92 3.8 5.43 3.89 3.89C3.94 3.33 4.4 2.88 4.96 2.88H7.96C8.46 2.88 8.89 3.26 8.96 3.76C9.08 4.68 9.33 5.58 9.7 6.43C9.84 6.77 9.76 7.16 9.5 7.42L8.28 8.64C9.18 10.18 10.82 11.82 12.36 12.72L13.58 11.5C13.84 11.24 14.23 11.16 14.57 11.3C15.42 11.67 16.32 11.92 17.24 12.04C17.74 12.11 18.12 12.55 18.12 13.06L18.12 16.92H22Z"/>
-      </svg>
-      Contact Me
-    </a>
-  </section>
+            <div class="project-card">
+                <div class="project-icon-wrapper">
+                    <div class="project-icon-circle">
+                        <i class="fas fa-tasks project-icon"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                </div>
+                <h4>Taskmati.site</h4>
+                <p>Smart task management tool with AI-powered prioritization, team collaboration, and real-time progress tracking for agile workflows.</p>
+                <div class="project-tags">
+                    <span>Django</span>
+                    <span>PostgreSQL</span>
+                    <span>Bootstrap</span>
+                </div>
+                <a href="https://taskmati.site" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Abdul Ali Al Moosvi — All rights reserved</p>
-  </footer>
+    <div class="section-divider"></div>
 
-  <!-- JAVASCRIPT -->
-  <script>
-    /* ── NOTE DOWNLOAD FUNCTION ─────────────────── */
-    function dlNote(e, filename) {
-      e.preventDefault();
-      const a = document.createElement('a');
-      a.href = filename;
-      a.download = filename;
-      a.target = '_blank';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    }
-    /* ── HAMBURGER MENU ─────────────────────────── */
-    const hamburger = document.getElementById('hamburger');
-    const menu      = document.getElementById('menu');
+    <!-- ====== CONTACT ====== -->
+    <section class="contact" id="contact">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-desc">
+            Have a project in mind, a collaboration idea, or just want to say hello?
+            Reach out — I'd love to connect!
+        </p>
 
-    function closeMenu() {
-      hamburger.classList.remove('open');
-      menu.classList.remove('open');
-      document.body.style.overflow = '';
-    }
+        <div class="contact-wrapper">
+            <!-- Web3Forms Integration -->
+            <form class="contact-form" id="contactForm" 
+                  action="https://api.web3forms.com/submit" 
+                  method="POST">
 
-    hamburger.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('open');
-      hamburger.classList.toggle('open');
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
+                <input type="hidden" name="access_key" value="9f1b706b-1590-4db4-922c-9d8a912fca71" />
 
-    hamburger.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') hamburger.click();
-    });
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                </div>
+                <div class="form-group">
+                    <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+                </div>
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment"></i> Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <div class="form-status" id="formStatus"></div>
+            </form>
 
-    document.addEventListener('click', (e) => {
-      if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
-        closeMenu();
-      }
-    });
+            
 
-    /* ── ANIMATED PARTICLE BACKGROUND ──────────── */
-    const canvas = document.getElementById('bg-canvas');
-    const ctx    = canvas.getContext('2d');
-    let W, H;
-    const PARTICLE_COUNT = 70;
-    const particles = [];
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Abdul Ali Al Moosvi — Full Stack Developer &amp; AI Expert</p>
+            <a href="https://instagram.com/s.abdulalimoosavi" target="_blank" class="footer-instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
 
-    function resize() {
-      W = canvas.width  = window.innerWidth;
-      H = canvas.height = window.innerHeight;
-    }
-    resize();
-    window.addEventListener('resize', resize);
-
-    class Particle {
-      constructor() { this.reset(); }
-      reset() {
-        this.x     = Math.random() * W;
-        this.y     = Math.random() * H;
-        this.vx    = (Math.random() - 0.5) * 0.35;
-        this.vy    = (Math.random() - 0.5) * 0.35;
-        this.r     = Math.random() * 1.5 + 0.5;
-        this.a     = Math.random() * 0.5 + 0.2;
-        this.color = Math.random() > 0.6
-          ? `rgba(212,168,83,${this.a})`
-          : `rgba(94,143,255,${this.a * 0.6})`;
-      }
-      update() {
-        this.x += this.vx;
-        this.y += this.vy;
-        if (this.x < 0 || this.x > W) this.vx *= -1;
-        if (this.y < 0 || this.y > H) this.vy *= -1;
-      }
-      draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-        ctx.fillStyle = this.color;
-        ctx.fill();
-      }
-    }
-
-    for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
-
-    function connectParticles() {
-      const DIST = 130;
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const d  = Math.sqrt(dx * dx + dy * dy);
-          if (d < DIST) {
-            const op = (1 - d / DIST) * 0.18;
-            ctx.strokeStyle = `rgba(212,168,83,${op})`;
-            ctx.lineWidth   = 0.6;
-            ctx.beginPath();
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.stroke();
-          }
-        }
-      }
-    }
-
-    const orbs = [
-      { x: 0.15, y: 0.2,  r: 280, color: 'rgba(212,168,83,0.045)' },
-      { x: 0.85, y: 0.75, r: 340, color: 'rgba(94,143,255,0.035)' },
-      { x: 0.5,  y: 0.5,  r: 200, color: 'rgba(0,229,255,0.025)'  },
-    ];
-
-    let frame = 0;
-    function animate() {
-      requestAnimationFrame(animate);
-      ctx.clearRect(0, 0, W, H);
-      frame++;
-      orbs.forEach((o, i) => {
-        const drift = Math.sin(frame * 0.003 + i * 2) * 0.03;
-        const grd = ctx.createRadialGradient(
-          (o.x + drift) * W, o.y * H, 0,
-          (o.x + drift) * W, o.y * H, o.r
-        );
-        grd.addColorStop(0, o.color);
-        grd.addColorStop(1, 'transparent');
-        ctx.fillStyle = grd;
-        ctx.beginPath();
-        ctx.arc((o.x + drift) * W, o.y * H, o.r, 0, Math.PI * 2);
-        ctx.fill();
-      });
-      particles.forEach(p => { p.update(); p.draw(); });
-      connectParticles();
-    }
-    animate();
-
-    /* ── SCROLL FADE-IN ─────────────────────────── */
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity   = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.about-card, .note-card, .skill-pill').forEach(el => {
-      el.style.opacity    = '0';
-      el.style.transform  = 'translateY(28px)';
-      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      observer.observe(el);
-    });
-  </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
